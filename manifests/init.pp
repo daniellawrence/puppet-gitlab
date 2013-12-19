@@ -56,6 +56,9 @@ class gitlab (
     $project_snippets       = $gitlab::params::project_snippets,
     $gitlab_projects        = $gitlab::params::gitlab_projects,
     $project_public_default = $gitlab::params::project_public_default, #gitlab >=6.1
+
+    #Module settings
+    $manage_posftix         = true
     
     #Deprecated in 1.0.0
     $gitlab_repodir   = '',

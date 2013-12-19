@@ -57,6 +57,9 @@ class gitlab::params {
   $project_snippets       = false
   $gitlab_projects        = '10'
   $project_public_default = true #https://github.com/gitlabhq/gitlabhq/issues/5000
+
+  #Module settings
+  $manage_posftix         = true
   
 }
 

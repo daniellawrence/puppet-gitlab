@@ -79,6 +79,9 @@ class gitlab::packages inherits gitlab {
 
   ## Postfix
   #===================================
-  include postfix
+
+  if $gitlab::manage_postfix {
+      include postfix
+  }
 
 }#end packages.pp
